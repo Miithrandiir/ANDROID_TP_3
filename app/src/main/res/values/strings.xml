@@ -14,4 +14,5 @@
     <string name="app_title_edit_identity">Edition de l\'identité</string>
     <string name="app_ok">Ok</string>
     <string name="app_cancel">cancel</string>
+    <string name="app_unknow">Inconnu</string>
 </resources>

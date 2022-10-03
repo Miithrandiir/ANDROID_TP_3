@@ -46,12 +46,16 @@
                         android:id="@+id/textView_lastname"
                         android:layout_width="wrap_content"
                         android:layout_height="wrap_content"
-                        android:text="@string/app_lastname" />
+                        android:layout_weight="1"
+                        android:text="@string/app_lastname"
+                        android:textStyle="bold" />
 
                     <TextView
                         android:id="@+id/textView_lastname_data"
                         android:layout_width="wrap_content"
-                        android:layout_height="wrap_content" />
+                        android:layout_height="wrap_content"
+                        android:text="@string/app_unknow"
+                        android:layout_weight="1"/>
                 </TableRow>
 
                 <TableRow
@@ -62,12 +66,16 @@
                         android:id="@+id/textView_firstname"
                         android:layout_width="wrap_content"
                         android:layout_height="wrap_content"
-                        android:text="@string/app_firstname" />
+                        android:layout_weight="1"
+                        android:text="@string/app_firstname"
+                        android:textStyle="bold" />
 
                     <TextView
                         android:id="@+id/textView_firstname_data"
                         android:layout_width="wrap_content"
-                        android:layout_height="wrap_content" />
+                        android:layout_height="wrap_content"
+                        android:text="@string/app_unknow"
+                        android:layout_weight="1"/>
                 </TableRow>
 
                 <TableRow
@@ -78,12 +86,16 @@
                         android:id="@+id/textView_tel"
                         android:layout_width="wrap_content"
                         android:layout_height="wrap_content"
-                        android:text="@string/app_tel" />
+                        android:layout_weight="1"
+                        android:text="@string/app_tel"
+                        android:textStyle="bold" />
 
                     <TextView
                         android:id="@+id/textView_tel_data"
                         android:layout_width="wrap_content"
-                        android:layout_height="wrap_content" />
+                        android:layout_height="wrap_content"
+                        android:text="@string/app_unknow"
+                        android:layout_weight="1"/>
                 </TableRow>
 
             </TableLayout>
@@ -97,6 +109,7 @@
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_marginTop="26dp"
+        android:onClick="onBtnEditIdentityClicked"
         android:text="@string/app_edit_identity"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
@@ -131,12 +144,16 @@
                 android:id="@+id/textView_number"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
-                android:text="@string/app_num" />
+                android:layout_weight="2"
+                android:text="@string/app_num"
+                android:textStyle="bold" />
 
             <TextView
                 android:id="@+id/textView_num_data"
                 android:layout_width="wrap_content"
-                android:layout_height="wrap_content" />
+                android:layout_height="wrap_content"
+                android:text="@string/app_unknow"
+                android:layout_weight="2"/>
         </TableRow>
 
         <TableRow
@@ -147,12 +164,16 @@
                 android:id="@+id/textView_rue"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
-                android:text="@string/app_street" />
+                android:layout_weight="2"
+                android:text="@string/app_street"
+                android:textStyle="bold" />
 
             <TextView
-                android:id="@+id/textView_rue_data"
+                android:id="@+id/textView_street_data"
                 android:layout_width="wrap_content"
-                android:layout_height="wrap_content" />
+                android:layout_height="wrap_content"
+                android:text="@string/app_unknow"
+                android:layout_weight="2"/>
         </TableRow>
 
         <TableRow
@@ -163,12 +184,16 @@
                 android:id="@+id/textView_zipCode"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
-                android:text="@string/app_zip_code" />
+                android:layout_weight="2"
+                android:text="@string/app_zip_code"
+                android:textStyle="bold" />
 
             <TextView
                 android:id="@+id/textView_zipCode_data"
                 android:layout_width="wrap_content"
-                android:layout_height="wrap_content" />
+                android:layout_height="wrap_content"
+                android:text="@string/app_unknow"
+                android:layout_weight="2"/>
         </TableRow>
 
         <TableRow
@@ -179,12 +204,16 @@
                 android:id="@+id/textView_city"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
-                android:text="@string/app_city" />
+                android:layout_weight="2"
+                android:text="@string/app_city"
+                android:textStyle="bold" />
 
             <TextView
                 android:id="@+id/textView_city_data"
                 android:layout_width="wrap_content"
-                android:layout_height="wrap_content" />
+                android:layout_height="wrap_content"
+                android:text="@string/app_unknow"
+                android:layout_weight="2"/>
         </TableRow>
 
     </TableLayout>
@@ -194,6 +223,7 @@
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_marginTop="64dp"
+        android:onClick="onBtnEditAddressClicked"
         android:text="@string/app_edit_address"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
