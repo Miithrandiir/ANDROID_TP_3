@@ -1,0 +1,14 @@
+<resources>
+    <string name="app_name">FicheHEBAN</string>
+    <string name="app_firstname">Prénom</string>
+    <string name="app_lastname">Nom</string>
+    <string name="app_tel">Téléphone</string>
+    <string name="app_num">Numéro</string>
+    <string name="app_street">Rue</string>
+    <string name="app_zip_code">Code Postal</string>
+    <string name="app_city">Ville</string>
+    <string name="app_edit_identity">Modifier mon identité</string>
+    <string name="app_edit_address">Modifier mon adresse</string>
+    <string name="app_section_address">Mon adresse</string>
+    <string name="app_profil_picture">profil picture</string>
+</resources>
