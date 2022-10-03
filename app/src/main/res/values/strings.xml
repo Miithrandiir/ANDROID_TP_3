@@ -11,4 +11,7 @@
     <string name="app_edit_address">Modifier mon adresse</string>
     <string name="app_section_address">Mon adresse</string>
     <string name="app_profil_picture">profil picture</string>
+    <string name="app_title_edit_identity">Edition de l\'identité</string>
+    <string name="app_ok">Ok</string>
+    <string name="app_cancel">cancel</string>
 </resources>
