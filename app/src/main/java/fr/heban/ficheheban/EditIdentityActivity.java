@@ -7,6 +7,8 @@ import android.os.Bundle;
 import android.view.View;
 import android.widget.EditText;
 
+import java.util.Objects;
+
 public class EditIdentityActivity extends AppCompatActivity {
 
     //Attribut représentant la clef dans l'extra de l'intention de retour
@@ -20,9 +22,24 @@ public class EditIdentityActivity extends AppCompatActivity {
         Intent intent = getIntent();
         String[] arr = intent.getStringArrayExtra(MainActivity.EXTRA_DATA_IDENTITY_ARRAY);
 
-        ((EditText) findViewById(R.id.editText_lastname)).setHint(arr[0]);
-        ((EditText) findViewById(R.id.editText_firstname)).setHint(arr[1]);
-        ((EditText) findViewById(R.id.editText_tel)).setHint(arr[2]);
+
+        if(Objects.equals(arr[0], getString(R.string.app_unknow))) {
+            ((EditText) findViewById(R.id.editText_lastname)).setHint(arr[0]);
+        } else {
+            ((EditText) findViewById(R.id.editText_lastname)).setText(arr[0]);
+        }
+
+        if(Objects.equals(arr[1], getString(R.string.app_unknow))) {
+            ((EditText) findViewById(R.id.editText_firstname)).setHint(arr[1]);
+        } else {
+            ((EditText) findViewById(R.id.editText_firstname)).setText(arr[1]);
+        }
+
+        if(Objects.equals(arr[2], getString(R.string.app_unknow))) {
+            ((EditText) findViewById(R.id.editText_tel)).setHint(arr[2]);
+        } else {
+            ((EditText) findViewById(R.id.editText_tel)).setText(arr[2]);
+        }
 
 
     }
