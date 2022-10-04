@@ -20,9 +20,9 @@ public class EditIdentityActivity extends AppCompatActivity {
         Intent intent = getIntent();
         String[] arr = intent.getStringArrayExtra(MainActivity.EXTRA_DATA_IDENTITY_ARRAY);
 
-        ((EditText) findViewById(R.id.editText_lastname)).setText(arr[0]);
-        ((EditText) findViewById(R.id.editText_firstname)).setText(arr[1]);
-        ((EditText) findViewById(R.id.editText_tel)).setText(arr[2]);
+        ((EditText) findViewById(R.id.editText_lastname)).setHint(arr[0]);
+        ((EditText) findViewById(R.id.editText_firstname)).setHint(arr[1]);
+        ((EditText) findViewById(R.id.editText_tel)).setHint(arr[2]);
 
 
     }

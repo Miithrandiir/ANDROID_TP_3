@@ -21,16 +21,16 @@ public class EditAddressActivity extends AppCompatActivity {
         String[] arr = intent.getStringArrayExtra(MainActivity.EXTRA_DATA_ADDRESS_ARRAY);
 
         EditText et = findViewById(R.id.editText_address_num_data);
-        et.setText(arr[0]);
+        et.setHint(arr[0]);
 
         et = findViewById(R.id.editText_address_street_data);
-        et.setText(arr[1]);
+        et.setHint(arr[1]);
 
         et = findViewById(R.id.editText_address_zip_code_data);
-        et.setText(arr[2]);
+        et.setHint(arr[2]);
 
         et = findViewById(R.id.editText_address_city_data);
-        et.setText(arr[3]);
+        et.setHint(arr[3]);
 
     }
     // Bouton permettant de fermer l'activité
