@@ -7,8 +7,8 @@
     <string name="app_street">Rue</string>
     <string name="app_zip_code">Code Postal</string>
     <string name="app_city">Ville</string>
-    <string name="app_edit_identity">Modifier mon identité</string>
-    <string name="app_edit_address">Modifier mon adresse</string>
+    <string name="app_edit_identity">Modifier identité</string>
+    <string name="app_edit_address">Modifier adresse</string>
     <string name="app_section_address">Mon adresse</string>
     <string name="app_profil_picture">profil picture</string>
     <string name="app_title_edit_identity">Edition de l\'identité</string>
