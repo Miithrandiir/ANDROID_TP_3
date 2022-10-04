@@ -9,6 +9,7 @@ import android.widget.EditText;
 
 public class EditAddressActivity extends AppCompatActivity {
 
+    //Attribut représentant la clef dans l'extra de l'intention de retour
     public final static String EXTRA_DATA_ARRAY_STR = "fr.heban.ficheheban.editAddressActivity.EXTRA_DATA_ARRAY_STR";
 
     @Override
@@ -32,13 +33,14 @@ public class EditAddressActivity extends AppCompatActivity {
         et.setText(arr[3]);
 
     }
-
+    // Bouton permettant de fermer l'activité
     public void onBtnCancleClicked(View view) {
 
         setResult(RESULT_CANCELED);
         this.finish();
     }
 
+    // Bouton permettant de retourner le résultat par intention
     public void onBtnOkClicked(View view) {
 
         String num = ((EditText) findViewById(R.id.editText_address_num_data)).getText().toString();

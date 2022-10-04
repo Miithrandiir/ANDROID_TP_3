@@ -15,4 +15,5 @@
     <string name="app_ok">Ok</string>
     <string name="app_cancel">cancel</string>
     <string name="app_unknow">Inconnu</string>
+    <string name="app_title_edit_address">Édition de l\'adresse</string>
 </resources>

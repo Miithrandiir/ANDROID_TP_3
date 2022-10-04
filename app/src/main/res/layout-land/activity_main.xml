@@ -10,6 +10,7 @@
         android:id="@+id/cardView"
         android:layout_width="409dp"
         android:layout_height="wrap_content"
+        android:layout_marginTop="16dp"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent">
@@ -54,8 +55,8 @@
                         android:id="@+id/textView_lastname_data"
                         android:layout_width="wrap_content"
                         android:layout_height="wrap_content"
-                        android:text="@string/app_unknow"
-                        android:layout_weight="1"/>
+                        android:layout_weight="1"
+                        android:text="@string/app_unknow" />
                 </TableRow>
 
                 <TableRow
@@ -74,8 +75,8 @@
                         android:id="@+id/textView_firstname_data"
                         android:layout_width="wrap_content"
                         android:layout_height="wrap_content"
-                        android:text="@string/app_unknow"
-                        android:layout_weight="1"/>
+                        android:layout_weight="1"
+                        android:text="@string/app_unknow" />
                 </TableRow>
 
                 <TableRow
@@ -94,8 +95,8 @@
                         android:id="@+id/textView_tel_data"
                         android:layout_width="wrap_content"
                         android:layout_height="wrap_content"
-                        android:text="@string/app_unknow"
-                        android:layout_weight="1"/>
+                        android:layout_weight="1"
+                        android:text="@string/app_unknow" />
                 </TableRow>
 
             </TableLayout>
@@ -104,33 +105,22 @@
 
     </androidx.cardview.widget.CardView>
 
-    <Button
-        android:id="@+id/button_edit_identity"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_marginTop="26dp"
-        android:onClick="onBtnEditIdentityClicked"
-        android:text="@string/app_edit_identity"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/cardView" />
-
     <TextView
         android:id="@+id/textView8"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_marginTop="48dp"
         android:text="@string/app_section_address"
         android:textSize="20sp"
         android:textStyle="bold"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/button_edit_identity" />
+        app:layout_constraintTop_toBottomOf="@+id/cardView" />
 
     <TableLayout
         android:id="@+id/tableLayout"
         android:layout_width="fill_parent"
         android:layout_height="wrap_content"
+        android:gravity="center"
         android:orientation="horizontal"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
@@ -230,10 +220,23 @@
         android:id="@+id/button_edit_address"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_marginTop="64dp"
         android:onClick="onBtnEditAddressClicked"
         android:text="@string/app_edit_address"
-        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toStartOf="@+id/button_edit_identity"
+        app:layout_constraintHorizontal_bias="0.5"
         app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/tableLayout" />
+
+    <Button
+        android:id="@+id/button_edit_identity"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:onClick="onBtnEditIdentityClicked"
+        android:text="@string/app_edit_identity"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.5"
+        app:layout_constraintStart_toEndOf="@+id/button_edit_address"
         app:layout_constraintTop_toBottomOf="@+id/tableLayout" />
 </androidx.constraintlayout.widget.ConstraintLayout>

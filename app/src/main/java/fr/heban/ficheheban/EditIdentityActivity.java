@@ -9,6 +9,7 @@ import android.widget.EditText;
 
 public class EditIdentityActivity extends AppCompatActivity {
 
+    //Attribut représentant la clef dans l'extra de l'intention de retour
     public final static String EXTRA_DATA_IDENTITY_ARRAY_STR = "fr.heban.ficheheban.editIdentityActivity.EXTRA_DATA_IDENTITY_ARRAY_STR";
 
     @Override
@@ -25,13 +26,14 @@ public class EditIdentityActivity extends AppCompatActivity {
 
 
     }
-
+    // Bouton permettant de fermer l'activité
     public void onBtnCancleClicked(View view) {
 
         setResult(RESULT_CANCELED);
         this.finish();
     }
 
+    // Bouton permettant de retourner le résultat par intention
     public void onBtnOkClicked(View view) {
 
         //Récupération des valeurs des champs
